@@ -21,7 +21,7 @@ export default class CigarDB extends Component {
 
     receivedData() {
         axios
-            .get(`http://127.0.0.1:5000/api/cigars`)
+            .get(`https://sysrock.pythonanywhere.com/api/cigars`)
             .then(res => {
                 const data = res.data.data;
                 const slice = data.slice(this.state.offset, this.state.offset + this.state.perPage)

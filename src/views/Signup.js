@@ -20,7 +20,7 @@ export default class Signup extends Component {
       console.log('Password and CnfmPswd do not match.')
       return this.props.addMessage('Password and Confirm Password do not match.', 'danger')
     }
-    const res = await fetch('http://127.0.0.1:5000/api/signup', {
+    const res = await fetch('https://sysrock.pythonanywhere.com/api/signup', {
       method: "POST",
       body: JSON.stringify({
         fname: fname,

@@ -9,7 +9,7 @@ export default class API extends Component {
     }
 
     componentDidMount = async () => {
-        const res = await fetch('http://127.0.0.1:5000/api/cigar_smdb')
+        const res = await fetch('https://sysrock.pythonanywhere.com/api/cigar_smdb')
         const data = await res.json()
         const string_data = JSON.stringify(data)
         console.log(string_data)

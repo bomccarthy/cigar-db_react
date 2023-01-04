@@ -22,7 +22,7 @@ export default class Filter extends Component {
     receivedData = (e) => {
         console.log(e)
         axios
-            .get(`http://127.0.0.1:5000/api/cigars/search/${e}`)
+            .get(`https://sysrock.pythonanywhere.com/api/cigars/search/${e}`)
             .then(res => {
                 const data = res.data.data;
                 const slice = data.slice(this.state.offset, this.state.offset + this.state.perPage)

@@ -8,7 +8,7 @@ export default function SingleCigar() {
 
     useEffect(()=>{
         const getCigarInfo = async () => {
-            const res = await fetch(`http://127.0.0.1:5000/api/cigars/${cigarId}`);
+            const res = await fetch(`https://sysrock.pythonanywhere.com/api/cigars/${cigarId}`);
             console.log(res);
             const data = await res.json();
             console.log(data);

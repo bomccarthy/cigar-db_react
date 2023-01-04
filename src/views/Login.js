@@ -13,7 +13,7 @@ export default class Login extends Component {
     const username = e.target.username.value
     const password = e.target.password.value
     
-    const res = await fetch('http://127.0.0.1:5000/api/login', {
+    const res = await fetch('https://sysrock.pythonanywhere.com/api/login', {
       method: "POST",
       body: JSON.stringify({
         username: username,
@@ -38,7 +38,7 @@ export default class Login extends Component {
     const username = e.target.username.value
     const password = e.target.password.value
     
-    const res = await fetch('http://127.0.0.1:5000/api/token', {
+    const res = await fetch('https://sysrock.pythonanywhere.com/api/token', {
       method: "POST",
       headers: {
         "Content-Type": 'application/json',
