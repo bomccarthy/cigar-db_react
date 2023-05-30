@@ -7,7 +7,7 @@ export default class CigarCard extends Component {
     const c = this.props.card
     return (
       <div className="card px-5 border-0" style={{ backgroundColor: '#343a40', color: '#FFFFFF', fontSize: '1.5rem' }}>
-        <img src={c.img_url} className="card-img-top mx-auto" alt={c.cigar} style={{ width: '15rem' }} />
+        <img src={c.img_url} className="card-img-top mx-auto" alt={c.cigar} style={{ width: '12rem' }} />
         <div className="card-body">
           <h2 className="card-title">{c.cigar}</h2>
           <div className="row">
