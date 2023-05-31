@@ -28,7 +28,7 @@ export default class Nav extends Component {
                                     <Link className="nav-link active nav-font-size" aria-current="page" to="/cigardb">Database</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a href='/api.html' className="nav-link active nav-font-size" aria-current="page" target="_blank" rel="noopener noreferrer">API</a>
+                                    <a href='/api.html' className="nav-link active nav-font-size" target="_blank" rel="noopener noreferrer">API</a>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link active nav-font-size" aria-current="page" to="/filter">Filter</Link>
