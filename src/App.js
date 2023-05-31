@@ -19,19 +19,13 @@ export default class App extends Component {
     if (foundUser){
       this.state = {
         user: JSON.parse(foundUser),
-        name: 'Shoha',
-        age: 9001,
-        message: {},
-        cart: []
+        message: {}
         }
     }
     else{
       this.state = {
         user: {},
-        name: 'Shoha',
-        age: 9001,
-        message: {},
-        cart: []
+        message: {}
         }
     }
     console.log('construction is done')
