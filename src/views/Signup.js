@@ -52,6 +52,7 @@ export default class Signup extends Component {
     return (
       <div className='signup'>
         <h1 className='boxes'>Sign Up</h1>
+        <p className='boxes tiny'>All Fields Required</p>
         <form onSubmit={(e)=>{ this.sendSignUpInfo(e) }}>
           <input placeholder='First Name' name='fname' className='form-control boxes' type='text' />
           <input placeholder='Last Name' name='lname' className='form-control boxes' type='text' />
