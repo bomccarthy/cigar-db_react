@@ -41,6 +41,10 @@ a:active { text-decoration: none; color: inherit;  }
     margin: 0.5rem;
 }
 
+.tiny {
+    font-size: small;
+}
+
 .messages {
     margin-top: 5rem;
     text-align: center;
